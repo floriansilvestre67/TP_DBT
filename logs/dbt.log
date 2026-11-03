@@ -1,0 +1,218 @@
+[0m15:20:43.741641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002212416DB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002212416EDE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002212416E390>]}
+
+
+============================== 15:20:43.744643 | f82a5788-209e-4e00-b1bc-b53baa5ab121 ==============================
+[0m15:20:43.744643 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:20:43.744643 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:43.746560 [warn ] [MainThread]: [[33mWARNING[0m]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. Please upgrade to a newer supported version of dbt for new projects: https://docs.getdbt.com/docs/dbt-versions?utm_source=dbt-cli
+[0m15:20:43.746560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'f82a5788-209e-4e00-b1bc-b53baa5ab121', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221243A2660>]}
+[0m15:21:02.503572 [debug] [MainThread]: Starter project path: C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m15:21:02.523440 [info ] [MainThread]: 
+Your new dbt project "TP_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:21:02.523440 [info ] [MainThread]: Setting up your profile.
+[0m15:21:13.684531 [info ] [MainThread]: Profile TP_dbt written to C:\Users\flsilvestr\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:21:13.684531 [debug] [MainThread]: Command `dbt init` succeeded at 15:21:13.684531 after 30.02 seconds
+[0m15:21:13.685533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022123FCA1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022123F2BE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022124048DD0>]}
+[0m15:21:13.685533 [debug] [MainThread]: Flushing usage events
+[0m15:22:52.688377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169925EA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169925EA000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169925E9EE0>]}
+
+
+============================== 15:22:52.691379 | 330f3526-6e60-438f-8c2e-6a99689c2456 ==============================
+[0m15:22:52.691379 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:22:52.691379 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:52.691379 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m15:22:52.693070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '330f3526-6e60-438f-8c2e-6a99689c2456', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016991DD3B30>]}
+[0m15:22:52.693070 [info ] [MainThread]: dbt version: 1.7.20
+[0m15:22:52.693070 [info ] [MainThread]: python version: 3.12.0
+[0m15:22:52.694078 [info ] [MainThread]: python path: C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_venv\Scripts\python.exe
+[0m15:22:52.694078 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:22:52.730796 [info ] [MainThread]: Using profiles dir at C:\Users\flsilvestr\.dbt
+[0m15:22:52.731790 [info ] [MainThread]: Using profiles.yml file at C:\Users\flsilvestr\.dbt\profiles.yml
+[0m15:22:52.731790 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+[0m15:22:52.732569 [info ] [MainThread]: Configuration:
+[0m15:22:52.732569 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:22:52.732569 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:22:52.733579 [info ] [MainThread]: Required dependencies:
+[0m15:22:52.733579 [debug] [MainThread]: Executing "git --help"
+[0m15:22:52.763509 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:22:52.763509 [debug] [MainThread]: STDERR: "b''"
+[0m15:22:52.764505 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:22:52.764505 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:22:52.764505 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:22:52.765505 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "TP_dbt", target "dev" invalid: ['schema'] is not valid under any of the given schemas
+
+
+[0m15:22:52.765505 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml> not found
+
+[0m15:22:52.765505 [debug] [MainThread]: Command `dbt debug` failed at 15:22:52.765505 after 0.15 seconds
+[0m15:22:52.766504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016991DD3B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169926607A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169927EA5D0>]}
+[0m15:22:52.766504 [debug] [MainThread]: Flushing usage events
+[0m15:37:04.053458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020685E89340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020685E88D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020685E889B0>]}
+
+
+============================== 15:37:04.061184 | 08edc5eb-5972-4954-bff9-b2352d58d459 ==============================
+[0m15:37:04.061184 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:37:04.061184 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:37:04.061184 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m15:37:04.061184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '08edc5eb-5972-4954-bff9-b2352d58d459', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206856CE030>]}
+[0m15:37:04.061184 [info ] [MainThread]: dbt version: 1.7.20
+[0m15:37:04.061184 [info ] [MainThread]: python version: 3.12.0
+[0m15:37:04.061184 [info ] [MainThread]: python path: C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_venv\Scripts\python.exe
+[0m15:37:04.061184 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:37:04.093287 [info ] [MainThread]: Using profiles dir at C:\Users\flsilvestr\.dbt
+[0m15:37:04.093287 [info ] [MainThread]: Using profiles.yml file at C:\Users\flsilvestr\.dbt\profiles.yml
+[0m15:37:04.093287 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+[0m15:37:04.093287 [info ] [MainThread]: adapter type: mysql
+[0m15:37:04.093287 [info ] [MainThread]: adapter version: 1.7.0
+[0m15:37:04.093287 [info ] [MainThread]: Configuration:
+[0m15:37:04.093287 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:37:04.093287 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:37:04.093287 [info ] [MainThread]: Required dependencies:
+[0m15:37:04.093287 [debug] [MainThread]: Executing "git --help"
+[0m15:37:04.140640 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:37:04.140640 [debug] [MainThread]: STDERR: "b''"
+[0m15:37:04.140640 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:37:04.140640 [info ] [MainThread]: Connection:
+[0m15:37:04.140640 [info ] [MainThread]:   server: localhost
+[0m15:37:04.140640 [info ] [MainThread]:   unix_socket: None
+[0m15:37:04.140640 [info ] [MainThread]:   port: 3307
+[0m15:37:04.140640 [info ] [MainThread]:   database: None
+[0m15:37:04.140640 [info ] [MainThread]:   schema: bronze
+[0m15:37:04.140640 [info ] [MainThread]:   user: root
+[0m15:37:04.140640 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:37:04.146006 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m15:37:04.146006 [debug] [MainThread]: Using mysql connection "debug"
+[0m15:37:04.146006 [debug] [MainThread]: On debug: select 1 as id
+[0m15:37:04.146006 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:37:04.188522 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:37:04.188522 [debug] [MainThread]: On debug: Close
+[0m15:37:04.188522 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:37:04.188522 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:37:04.188522 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml> not found
+
+[0m15:37:04.188522 [debug] [MainThread]: Command `dbt debug` failed at 15:37:04.188522 after 0.22 seconds
+[0m15:37:04.188522 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:37:04.188522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206856CE030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206859EB770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068606D7C0>]}
+[0m15:37:04.188522 [debug] [MainThread]: Flushing usage events
+[0m15:39:22.370101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268783DA300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268783DA3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268783DB1D0>]}
+
+
+============================== 15:39:22.370101 | 3fa409e7-fd71-48e8-aed1-93a5839a6f80 ==============================
+[0m15:39:22.370101 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:39:22.370101 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:39:22.370101 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m15:39:22.370101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '3fa409e7-fd71-48e8-aed1-93a5839a6f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268780F3D10>]}
+[0m15:39:22.370101 [info ] [MainThread]: dbt version: 1.7.20
+[0m15:39:22.370101 [info ] [MainThread]: python version: 3.12.0
+[0m15:39:22.370101 [info ] [MainThread]: python path: C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_venv\Scripts\python.exe
+[0m15:39:22.370101 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:39:22.417751 [info ] [MainThread]: Using profiles dir at C:\Users\flsilvestr\.dbt
+[0m15:39:22.417751 [info ] [MainThread]: Using profiles.yml file at C:\Users\flsilvestr\.dbt\profiles.yml
+[0m15:39:22.417751 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+[0m15:39:22.417751 [info ] [MainThread]: adapter type: mysql
+[0m15:39:22.417751 [info ] [MainThread]: adapter version: 1.7.0
+[0m15:39:22.417751 [info ] [MainThread]: Configuration:
+[0m15:39:22.417751 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:39:22.417751 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:39:22.417751 [info ] [MainThread]: Required dependencies:
+[0m15:39:22.417751 [debug] [MainThread]: Executing "git --help"
+[0m15:39:22.449861 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:39:22.449861 [debug] [MainThread]: STDERR: "b''"
+[0m15:39:22.449861 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:39:22.449861 [info ] [MainThread]: Connection:
+[0m15:39:22.449861 [info ] [MainThread]:   server: localhost
+[0m15:39:22.449861 [info ] [MainThread]:   unix_socket: None
+[0m15:39:22.449861 [info ] [MainThread]:   port: 3307
+[0m15:39:22.449861 [info ] [MainThread]:   database: None
+[0m15:39:22.449861 [info ] [MainThread]:   schema: bronze
+[0m15:39:22.449861 [info ] [MainThread]:   user: root
+[0m15:39:22.449861 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:39:22.449861 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m15:39:22.449861 [debug] [MainThread]: Using mysql connection "debug"
+[0m15:39:22.449861 [debug] [MainThread]: On debug: select 1 as id
+[0m15:39:22.449861 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:39:22.497368 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:39:22.497368 [debug] [MainThread]: On debug: Close
+[0m15:39:22.497368 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:39:22.497368 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:39:22.497368 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml> not found
+
+[0m15:39:22.497368 [debug] [MainThread]: Command `dbt debug` failed at 15:39:22.497368 after 0.20 seconds
+[0m15:39:22.497368 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:39:22.497368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002687749D280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026878430260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026877F1CA70>]}
+[0m15:39:22.497368 [debug] [MainThread]: Flushing usage events
+[0m15:40:46.686216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66204A4E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66204A5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66204A2D0>]}
+
+
+============================== 15:40:46.686216 | 16ec41ff-ca6f-4cba-a89a-6875e8233934 ==============================
+[0m15:40:46.686216 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:40:46.700107 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:40:46.700107 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m15:40:46.700107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '16ec41ff-ca6f-4cba-a89a-6875e8233934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66204A5A0>]}
+[0m15:40:46.701583 [info ] [MainThread]: dbt version: 1.7.20
+[0m15:40:46.701583 [info ] [MainThread]: python version: 3.12.0
+[0m15:40:46.701583 [info ] [MainThread]: python path: C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_venv\Scripts\python.exe
+[0m15:40:46.701583 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:40:46.734765 [info ] [MainThread]: Using profiles dir at C:\Users\flsilvestr\.dbt
+[0m15:40:46.734765 [info ] [MainThread]: Using profiles.yml file at C:\Users\flsilvestr\.dbt\profiles.yml
+[0m15:40:46.734765 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+[0m15:40:46.734765 [info ] [MainThread]: adapter type: mysql
+[0m15:40:46.734765 [info ] [MainThread]: adapter version: 1.7.0
+[0m15:40:46.734765 [info ] [MainThread]: Configuration:
+[0m15:40:46.734765 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:40:46.734765 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:40:46.734765 [info ] [MainThread]: Required dependencies:
+[0m15:40:46.734765 [debug] [MainThread]: Executing "git --help"
+[0m15:40:46.768726 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:40:46.768726 [debug] [MainThread]: STDERR: "b''"
+[0m15:40:46.768726 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:40:46.768726 [info ] [MainThread]: Connection:
+[0m15:40:46.768726 [info ] [MainThread]:   server: localhost
+[0m15:40:46.768726 [info ] [MainThread]:   unix_socket: None
+[0m15:40:46.768726 [info ] [MainThread]:   port: 3307
+[0m15:40:46.768726 [info ] [MainThread]:   database: None
+[0m15:40:46.768726 [info ] [MainThread]:   schema: bronze
+[0m15:40:46.768726 [info ] [MainThread]:   user: root
+[0m15:40:46.768726 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:40:46.768726 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m15:40:46.768726 [debug] [MainThread]: Using mysql connection "debug"
+[0m15:40:46.768726 [debug] [MainThread]: On debug: select 1 as id
+[0m15:40:46.768726 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:40:46.819672 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:40:46.819672 [debug] [MainThread]: On debug: Close
+[0m15:40:46.819672 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:40:46.819672 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:40:46.819672 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml> not found
+
+[0m15:40:46.819672 [debug] [MainThread]: Command `dbt debug` failed at 15:40:46.819672 after 0.21 seconds
+[0m15:40:46.819672 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:40:46.819672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E661D52270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6622D0C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66213CF50>]}
+[0m15:40:46.819672 [debug] [MainThread]: Flushing usage events
