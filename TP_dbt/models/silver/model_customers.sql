@@ -1,6 +1,6 @@
 
-{{ config(materialized='view') }}
+{{ config(materialized='view', schema = 'bronze') }}
 
 
-SELECT * , CONCAT(UPPER(firstname), ' ', lastname) as name
+SELECT * , CONCAT(UPPER(lastname), ' ', firstname) as name
 FROM bronze.customers

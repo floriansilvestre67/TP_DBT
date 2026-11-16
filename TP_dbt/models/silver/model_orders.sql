@@ -1,5 +1,5 @@
 
-{{ config(materialized='view') }}
+{{ config(materialized='view', schema = 'bronze') }}
 
 
 SELECT
