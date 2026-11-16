@@ -6,6 +6,7 @@ SELECT  o.customerid,
     o.employeeid,
     o.storeid,
     o.status, 
+    o.orderid,
     Count(o.orderid ) AS NbCommandes ,
      SUM(oi.quantity*oi.unitprice) SommeCommande
 FROM bronze.orderitems AS oi

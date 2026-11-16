@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Données brutes provenant de la base Bronze"
+
+    #database: bronze
+    # schema: bronze
+
+    tables:
+      - name: orders
+        description: "Table des commandes"
