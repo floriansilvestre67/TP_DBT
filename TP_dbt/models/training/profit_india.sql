@@ -1,0 +1,1 @@
+{{ generate_profit_model('sales_india', eur_rate = var('eur_rate_inde')) }}

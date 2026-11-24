@@ -31,6 +31,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   TP_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    +materialized: view # Config indicated by + and applies to all files under models/example/
+    
+    silver:
+      +schema : silver
+    gold:
+      +schema : gold
+      +materialized: table
+    training:
+      +schema : training
+      +materialized: table
+
+vars : 
+  eur_rate_us: 0.8906 #US
+  eur_rate_uk: 1.1777 #UK
+  eur_rate_inde: 0.00926 #Inde

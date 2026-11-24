@@ -266,3 +266,51 @@ Runtime Error
 [0m16:27:12.120870 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m16:27:12.120870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD44365DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD444B5280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD44E8B230>]}
 [0m16:27:12.120870 [debug] [MainThread]: Flushing usage events
+[0m16:14:21.046364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342C29160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34272BC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D33F9BA090>]}
+
+
+============================== 16:14:21.055081 | 18a8540c-4248-4eb1-9413-546dce6f5d59 ==============================
+[0m16:14:21.055081 [info ] [MainThread]: Running with dbt=1.7.20
+[0m16:14:21.055081 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:14:21.055081 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m16:14:21.055081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '18a8540c-4248-4eb1-9413-546dce6f5d59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342C28FB0>]}
+[0m16:14:21.055081 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:14:21.055081 [debug] [MainThread]: Command `dbt docs generate` failed at 16:14:21.055081 after 0.13 seconds
+[0m16:14:21.055081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342858A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342C0B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D342C0AF00>]}
+[0m16:14:21.055081 [debug] [MainThread]: Flushing usage events
+[0m14:52:46.715415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE2AE88C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCDF88A5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE2AE83E0>]}
+
+
+============================== 14:52:46.715415 | f6246248-b87f-4d3b-a840-1b5a907b3248 ==============================
+[0m14:52:46.715415 [info ] [MainThread]: Running with dbt=1.7.20
+[0m14:52:46.715415 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:52:46.715415 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m14:52:46.715415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'f6246248-b87f-4d3b-a840-1b5a907b3248', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE2802A80>]}
+[0m14:52:46.715415 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:52:46.715415 [debug] [MainThread]: Command `dbt run` failed at 14:52:46.715415 after 0.10 seconds
+[0m14:52:46.715415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE2802A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE177C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DCE177C620>]}
+[0m14:52:46.715415 [debug] [MainThread]: Flushing usage events
+[0m14:53:14.377309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DA480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DA300>]}
+
+
+============================== 14:53:14.379362 | d56575bb-9f8c-46fd-a1ec-66d4c5054a8c ==============================
+[0m14:53:14.379362 [info ] [MainThread]: Running with dbt=1.7.20
+[0m14:53:14.380362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\flsilvestr\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select model_store_performance.sql', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:14.380362 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m14:53:14.381357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'd56575bb-9f8c-46fd-a1ec-66d4c5054a8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DA480>]}
+[0m14:53:14.381357 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\flsilvestr\Documents\TP_BI_Avance\TP_DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:53:14.382739 [debug] [MainThread]: Command `dbt run` failed at 14:53:14.382361 after 0.08 seconds
+[0m14:53:14.383058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E46034A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DA480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2E48DB5F0>]}
+[0m14:53:14.383372 [debug] [MainThread]: Flushing usage events

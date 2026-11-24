@@ -1,0 +1,238 @@
+version: 2
+
+sources:
+
+  - name: bronze
+    schema: bronze
+    description: Données brutes du système de gestion commerciale.
+
+    tables:
+
+      - name: customers
+        description: Informations des clients.
+        columns:
+          - name: customerid
+          - name: firstname
+          - name: lastname
+          - name: email
+          - name: phone
+          - name: address
+          - name: city
+          - name: state
+          - name: zipcode
+          - name: updated_at
+
+      - name: dates
+        description: Dimension temporelle.
+        columns:
+          - name: date
+          - name: day
+          - name: month
+          - name: year
+          - name: quarter
+          - name: dayofweek
+          - name: weekofyear
+          - name: updated_at
+
+      - name: employees
+        description: Informations des employés.
+        columns:
+          - name: employeeid
+          - name: firstname
+          - name: lastname
+          - name: email
+          - name: jobtitle
+          - name: hiredate
+          - name: managerid
+          - name: address
+          - name: city
+          - name: state
+          - name: zipcode
+          - name: updated_at
+
+      - name: orders
+        description: Commandes clients.
+        columns:
+
+          - name: orderid
+            tests:
+              - unique
+              - not_null
+
+          - name: orderdate
+            tests:
+              - not_null
+
+          - name: customerid
+            tests:
+              - not_null
+              - relationships:
+                  to: source('bronze', 'customers')
+                  field: customerid
+
+          - name: employeeid
+            tests:
+              - relationships:
+                  to: source('bronze', 'employees')
+                  field: employeeid
+
+          - name: storeid
+            tests:
+              - relationships:
+                  to: source('bronze', 'stores')
+                  field: storeid
+
+          - name: status
+            tests:
+              - not_null
+              - accepted_values:
+                  values:
+                    - '01'
+                    - '02'
+                    - '03'
+
+          - name: updated_at
+
+      - name: orderitems
+        description: Lignes de commande.
+        columns:
+          - name: orderid
+          - name: orderitemid
+          - name: productid
+          - name: quantity
+          - name: unitprice
+          - name: updated_at
+
+      - name: products
+        description: Catalogue des produits.
+        columns:
+          - name: productid
+          - name: name
+          - name: category
+          - name: retailprice
+          - name: supplierprice
+          - name: supplierid
+          - name: updated_at
+
+      - name: stores
+        description: Informations des magasins.
+        columns:
+          - name: storeid
+          - name: storename
+          - name: address
+          - name: city
+          - name: state
+          - name: zipcode
+          - name: email
+          - name: phone
+          - name: updated_at
+
+      - name: suppliers
+        description: Informations des fournisseurs.
+        columns:
+          - name: supplierid
+          - name: suppliername
+          - name: contactperson
+          - name: email
+          - name: phone
+          - name: address
+          - name: city
+          - name: state
+          - name: zipcode
+          - name: updated_at
+
+      - name: salestarget
+        description: Objectifs de vente des magasins.
+        columns:
+          - name: StoreID
+          - name: SalesTarget
+
+  - name: training
+    schema: training
+    description: Données utilisées pour les exercices de conversion de devises.
+
+    tables:
+
+      - name: sales_us
+        columns:
+          - name: sales_date
+          - name: quantity_sold
+          - name: unit_sell_price
+          - name: unit_purchase_cost
+
+      - name: sales_uk
+        columns:
+          - name: sales_date
+          - name: quantity_sold
+          - name: unit_sell_price
+          - name: unit_purchase_cost
+
+      - name: sales_india
+        columns:
+          - name: sales_date
+          - name: quantity_sold
+          - name: unit_sell_price
+          - name: unit_purchase_cost
+
+  - name: snapshots
+    schema: snapshots
+    description: Historique des clients géré par les snapshots dbt.
+
+    tables:
+
+      - name: customers_snapshot
+        columns:
+          - name: customerid
+          - name: firstname
+          - name: lastname
+          - name: email
+          - name: phone
+          - name: address
+          - name: city
+          - name: state
+          - name: zipcode
+          - name: updated_at
+          - name: dbt_scd_id
+          - name: dbt_updated_at
+          - name: dbt_valid_from
+          - name: dbt_valid_to
+
+  - name: gold
+    schema: gold
+    description: Couche Gold contenant les indicateurs métiers.
+
+    tables:
+
+      - name: model_fact_orders
+        description: Table de faits des commandes.
+        columns:
+          - name: customerid
+          - name: employeeid
+          - name: storeid
+          - name: status
+          - name: orderid
+            tests: 
+              - unique 
+              - not_null
+          - name: NbCommandes
+          - name: SommeCommande
+
+      - name: model_customer_revenu
+        description: Chiffre d'affaires généré par client.
+        columns:
+          - name: customerid
+            tests: 
+              - unique 
+              - not_null
+          - name: name
+          - name: revenue_gen
+
+      - name: model_store_performance
+        description: Performance des magasins vis-à-vis des objectifs.
+        columns:
+          - name: storeid
+            tests: 
+              - unique 
+              - not_null
+          - name: SalesTarget
+          - name: revenue_actuel
